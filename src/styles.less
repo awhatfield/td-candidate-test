@@ -1,6 +1,143 @@
 @import "libraries/bootstrap/less/variables.less";
 @import "libraries/bootstrap/less/mixins.less";
 
+html{width:100%;height:100%;}
+
 body {
-	padding-top: 50px;
+	padding: 70px 0 0 0;
+	background: #eee;
+	width:100%;
+	height:100%;
+	margin:0;
+	overflow:hidden;
+}
+
+.inbox-title {
+	display:block;
+	float:left;
+	width:300px;
+	border-right:1px solid gray; 
+}
+
+.inbox {
+	display:block;
+	float:left;
+	height:100%;
+	width:300px;
+	border-right:1px solid gray;
+	background-color:#fff;
+	padding:10px;
+}
+
+.write-new {
+	display:block;
+	width:160px;
+	margin: 10px auto 20px;
+}
+
+.write-reply {
+	float:right;
+	-webkit-transition: all ease-out .2s;
+	-moz-transition: all ease-out .2s;
+	-o-transition: all ease-out .2s;
+	transition: all ease-out .2s;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color: #555555;
+	background-color: #dee3e6;
+}
+
+.inbox a {
+	color:#555555;
+}
+
+.write-new > .glyphicon, .write-reply > .glyphicon {
+	padding-right:10px;
+}
+
+.nav-pills > .active > a > .badge {
+	color: #fff;
+	background-color: #337AB7;
+	float:right;
+}
+
+.main-title {
+	display:block;
+	float:left;
+	width:auto;
+	height:100%;
+}
+
+.main {
+	display:block;
+	float:left;
+	height:100%;
+	width:800px;
+	padding:30px;
+}
+
+.message {
+	position:relative;
+	padding:25px 80px 30px;
+}
+
+	.message h4, .message h5 {
+		margin:0 0 5px 0;
+	}
+
+	.message p{
+		margin:30px 0;
+	}
+
+.user-reply {
+	display:block;
+	visibility:hidden;
+	margin:20px 0;
+	padding:30px 0 10px;
+	border-top:1px solid #c7c7c7;
+	-webkit-transition:visibility 0.3s ease .5s;
+	-moz-transition:visibility 0.3s ease .5s;
+	-ms-transition:visibility 0.3s ease .5s;
+	-o-transition:visibility 0.3s ease .5s;
+	transition:visibility 0.3s ease .5s;
+}
+
+.user-reply.active {
+	visibility: visible;
+}
+
+.img-circle {
+	width:50px;
+	height:50px;
+	background-color:gray;
+	border-radius:50%;
+	margin-right:10px;
+}
+
+.sendee {
+	position:absolute;
+	display:block;
+	top:20px;
+	left:20px;
+}
+
+.side-info {
+	position:absolute;
+	text-align:right;
+	display:block;
+	top:20px;
+	right:80px;
+}
+
+.side-info span {
+	display:block;
+}
+
+.page-header {
+	color:#fff;
+	border:none;
+	padding:0 20px;
+	margin:0;
 }

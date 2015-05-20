@@ -14,31 +14,49 @@
 		<link rel="stylesheet" href=".tmp/all.css"/>
 		<!-- endbuild -->
 	</head>
-	<body role="document">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" target="_blank" href="https://github.com/djmccormick/td-candidate-test#td-candidate-test">td-candidate-test</a>
-				</div>
-				<div id="navbar" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="../src/instructions.html">Instructions</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+	<body role="document clearfix">
 
-		<div class="container">
-			<div class="starter-template" style="padding: 40px 15px; text-align: center;">
-				<h1>Starter Template</h1>
-				<p class="lead">Replace this <code>.starter-template</code> div with your new custom component.</p>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="inbox-title">
+			<p class="navbar-text navbar-left">
+				<img src="imgs/Sender.jpg" alt="" class="img-circle">
+				<a href="#" class="navbar-link">Anthony Hatfield</a>
+			</p>
+		</div>
+		<div class="main-title">
+			<div class="page-header">
+				<h2>Inbox</h2>
+			</div>
+		</div>
+	</nav>
+
+		<div class="inbox">
+			<button type="button" class="write-new btn btn-primary btn-lg"><span class="glyphicon glyphicon-pencil"></span>New Email</button>
+			<ul class="nav nav-pills nav-stacked">
+				<li role="presentation" class="active"><a href="#">Inbox<span class="badge">42</span></a></li>
+				<li role="presentation"><a href="#">Sent</a></li>
+				<li role="presentation"><a href="#">Flagged</a></li>
+				<li role="presentation"><a href="#">Deleted</a></li>
+			</ul>
+		</div>
+
+		<div class="main clearfix">
+			<div class="panel panel-default">
+				<div class="message panel-body">
+					<div class="side-info">
+						<span>09/18/2015</span>
+						<span class="label label-success">Internal</span>
+					</div>
+					<img src="imgs/Sendee.jpg" alt="" class="sendee img-circle">
+					<h4>Danielle Carter</h4>
+					<h5><a href="mailto:danielle.carter@email.com">danielle.carter@email.com</a></h5>
+					<p>Hello!<br>
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo</p>
+					<div class="user-reply">
+						<input type="text" class="form-control" placeholder="Reply to Message">
+					</div>
+					<button type="button" class="write-reply btn btn-lg"><span class="glyphicon glyphicon-share-alt"></span>Reply</button>
+				</div>
 			</div>
 		</div>
 
